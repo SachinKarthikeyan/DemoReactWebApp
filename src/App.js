@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Churn from './pages/Churn';
+import Fake from './pages/Fake';
+import Meme from './pages/Meme';
+import Sen from './pages/Sen';
+import Social from './pages/Social';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <BrowserRouter>
+            <Routes>
+              <Route index element = {<Home/>} />
+              <Route path="/home" element={<Home/>} />
+              <Route path="/churn" element={<Churn/>} />
+              <Route path="/fake" element={<Fake/>} />
+              <Route path="/meme" element={<Meme/>} />
+              <Route path="/sen" element={<Sen/>} />
+              <Route path="/social" element={<Social/>} />
+            </Routes>
+        </BrowserRouter>
     </div>
   );
 }
