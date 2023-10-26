@@ -30,7 +30,7 @@ const Drag = () => {
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
     >
-      <img src={upload}  className="image1"  />
+      <img src={upload}  className="image3"  />
       <p>Drag and drop files here</p>
       <p>Only xlsx, csv Format Files are accepted</p>
       <label className="file-input-label">

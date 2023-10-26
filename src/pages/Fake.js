@@ -1,11 +1,20 @@
 import Header  from "../components/Header/Header";
 import Search from "../components/Search/Search";
 import Rounded from "../components/Rounded/Rounded";
+import FileUpload from "../components/FileUpload/FileUpload";
+import Image from "../components/Image/Image";
+
 
 export default function Fake() {
+    
+    const handleFileChange = (selectedFile) => {
+        console.log('Selected file:', selectedFile);
+      };
+
     return (
         <>
             <Header/>
+            <Image/>
             <div className="card">
                 <h2 className="text">
                     Fake Sentiment Analysis
@@ -18,7 +27,7 @@ export default function Fake() {
                 </div>
                 <div className="samedir">
                     <Rounded text="Analyze" />
-                    <Rounded text="Upload"  />
+                    <FileUpload onFileChange={handleFileChange} />
                 </div>
             </div>
         </>

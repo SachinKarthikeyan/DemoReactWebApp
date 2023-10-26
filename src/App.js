@@ -5,6 +5,8 @@ import Fake from './pages/Fake';
 import Meme from './pages/Meme';
 import Sen from './pages/Sen';
 import Social from './pages/Social';
+import MainPage from './pages/MainPage';
+
 import './App.css';
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
     <div>
         <BrowserRouter>
             <Routes>
-              <Route index element = {<Home/>} />
+              <Route index element = {<MainPage/>} />
               <Route path="/home" element={<Home/>} />
               <Route path="/churn" element={<Churn/>} />
               <Route path="/fake" element={<Fake/>} />
