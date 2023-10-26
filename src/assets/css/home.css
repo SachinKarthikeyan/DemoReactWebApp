@@ -10,7 +10,9 @@ a {
 }
  
 #htitle{
-    padding: 15% 10% 5% 10% ;
+    padding: 13% 5% 5% 10% ;
+    position: absolute;
+    right: 0;
 }
 
 h1 {
